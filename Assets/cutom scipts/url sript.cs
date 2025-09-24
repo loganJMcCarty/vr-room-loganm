@@ -4,7 +4,7 @@ using UnityEngine.Video;
 public class urlsript : MonoBehaviour
 {
     public VideoPlayer videoPlayer; // Assign in the Inspector
-    public string videoUrl = "https://youtu.be/sB5n6wnT61w";
+    public string videoUrl = "file://C:/Users/LOGANMCCARTY/Videos/Screen Recording 2025-09-23 201712.mp4";
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -14,12 +14,12 @@ public class urlsript : MonoBehaviour
 
         // Prepare and play the video
         videoPlayer.Prepare();
-        videoPlayer.Play();
+       
     }
 
     // Update is called once per frame
-    void Update()
+    public void PlayVideo()
     {
-        
+         videoPlayer.Play();
     }
 }
